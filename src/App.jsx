@@ -1,12 +1,13 @@
 import './App.css'
-
-import Skills from './components/Skills'
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 function App() {
-
-
   return (
-    <Skills />
-  )
+    <>
+      <Navbar />
+      <Skills />
+    </>
+  );
 }
 
 export default App

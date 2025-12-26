@@ -86,7 +86,7 @@ export default function Skills() {
           src={element.img}
           alt={element.name}
         />
-        <h2 className="text-center m-auto text-gray-400 hover:text-gray-500 hover:scale-110 transition-all duration-300 font-bold tracking-wider">
+        <h2 className="text-center m-auto text-sm sm:text-lg text-gray-400 hover:text-gray-500 hover:scale-110 transition-all duration-300 font-bold tracking-wider">
           {element.name}
         </h2>
       </div>

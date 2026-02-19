@@ -21,6 +21,11 @@ export default function Skills() {
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
     },
     {
+      color: "#38bdf8",
+      name: "Tailwind",
+      img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    },
+    {
       color: "#CC6699",
       name: "SCSS",
       img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg",
@@ -75,7 +80,7 @@ export default function Skills() {
     return (
       <div
         key={index}
-        className="w-32 h-32 sm:w-56 sm:h-56 border flex flex-col justify-between flex-shrink-0 p-5 m-5 rounded-xl shadow-xl "
+        className="w-28 h-28 sm:w-52 sm:h-52 border flex flex-col justify-between flex-shrink-0 p-5 m-5 rounded-xl shadow-xl "
         style={{
           border: `2px solid ${element.color}`,
           boxShadow: `0 10px 25px ${element.color}40`,
@@ -86,7 +91,7 @@ export default function Skills() {
           src={element.img}
           alt={element.name}
         />
-        <h2 className="text-center m-auto text-sm sm:text-lg text-gray-400 hover:text-gray-500 hover:scale-110 transition-all duration-300 font-bold tracking-wider">
+        <h2 className="text-center m-auto text-xs sm:text-lg text-gray-400 hover:text-gray-500 hover:scale-110 transition-all duration-300 font-bold tracking-wider">
           {element.name}
         </h2>
       </div>
@@ -94,10 +99,10 @@ export default function Skills() {
   });
   return (
     <>
-      <h1 className="text-center font-extrabold text-6xl text-gray-400 tracking-wider">
+      <h1 className="text-center font-extrabold text-4xl md:text-6xl text-gray-400 tracking-wider">
         Skills
       </h1>
-      <p className="text-center text-2xl text-gray-300">
+      <p className="text-center text-xl md:text-2xl text-gray-300">
         Technologies I work with
       </p>
       <div className="flex flex-wrap justify-center items-center my-12">

@@ -2,3 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "google";
+    src: url("../public/fonts/GoogleSansCode-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "google";
+    src: url("../public/fonts/GoogleSansCode-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("../public/fonts/Inter_18pt-Medium.ttf");
+    font-weight: 300;
+    font-display: swap;
+}

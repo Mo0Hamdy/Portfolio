@@ -60,6 +60,18 @@ const projects = [
     techs: ["react/react-original.svg", "materialui/materialui-original.svg"],
   },
   {
+    name: "Boldo",
+    demo: "https://github.com/Mo0Hamdy/Boldo",
+    live: "https://mo0hamdy.github.io/Boldo/",
+    image: xo,
+    techs: [
+      "react/react-original.svg",
+      "materialui/materialui-original.svg",
+      "tailwindcss/tailwindcss-original.svg",
+      "vitejs/vitejs-original.svg",
+    ],
+  },
+  {
     name: "Attack on titan",
     demo: "https://github.com/Mo0Hamdy/Attack-On-Titan",
     live: "https://mo0hamdy.github.io/Attack-On-Titan/",
@@ -70,31 +82,40 @@ const projects = [
 const projectsDetails = projects.map((element, index) => {
   return (
     <div className="bg-teal-300 w-80 flex-shrink-0 p-3" key={index}>
-      <h2 className="text-xl">{element.name}</h2>
+      <h2 className="text-xl text-center font-inter font-semibold">{element.name}</h2>
       <a
-        className="w-1/2 relative inline-block overflow-hidden after:absolute after:content-[''] after:-left-full hover:after:translate-x-full after:transition-all after:duration-500 after:h-full after:w-full after:bg-red-500 "
+        className="w-1/2 inline-flex justify-center relative overflow-hidden after:absolute after:content-[''] after:-left-full hover:after:translate-x-full after:transition-all after:duration-500 after:h-full after:w-full after:bg-cyan-500 "
         target="_blank"
         href={element.live}
+        title="view live website"
       >
         {" "}
-        <RemoveRedEyeIcon style={{ position: "relative", zIndex: "10" }} />
+        <RemoveRedEyeIcon
+          style={{ position: "relative", zIndex: "10", color: "white",margin:"3px" }}
+        />
       </a>
       <a
-        className="w-1/2 relative inline-block overflow-hidden after:absolute after:content-[''] after:-left-full hover:after:translate-x-full after:transition-all after:duration-500 after:h-full after:w-full after:bg-red-500 "
+        className="w-1/2 inline-flex justify-center relative overflow-hidden after:absolute after:content-[''] after:-left-full hover:after:translate-x-full after:transition-all after:duration-500 after:h-full after:w-full after:bg-cyan-500 "
         target="_blank"
         href={element.demo}
+        title="view project demo"
       >
         {" "}
-        <CodeIcon style={{ position: "relative", zIndex: "10" }} />
+        <CodeIcon
+          style={{ position: "relative", zIndex: "10", color: "white",margin:"3px" }}
+        />
       </a>
-      <ul className="flex justify-center">
+      <ul className="flex justify-center gap-2 my-2">
         {element.techs.map((item, i) => {
           return (
-            <li key={i}>
+            <li
+              className="w-12 rounded-full  border overflow-hidden bg-white p-1"
+              key={i}
+            >
               <img
                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${item}`}
                 alt=""
-                className="w-12 rounded-full border bg-white p-1"
+                className="  hover:scale-110 rounded-full transition-all duration-300"
               />
             </li>
           );
